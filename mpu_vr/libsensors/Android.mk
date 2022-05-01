@@ -178,7 +178,7 @@ include $(BUILD_SHARED_LIBRARY)
 # Build a temporary HAL that links the InvenSense .so
 include $(CLEAR_VARS)
 
-LOCAL_MODULE := sensors.rk30board
+LOCAL_MODULE := sensors.$(TARGET_BOARD_HARDWARE)
 LOCAL_PROPRIETARY_MODULE := true
 $(info YD>>LOCAL_MODULE=$(LOCAL_MODULE))
 
